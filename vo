@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Superior Protein Eggs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fffdf7;
+    color:#333;
+}
+
+header{
+    background:#ffb347;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#7a3500;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#7a3500;
+    font-weight:600;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:50px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#7a3500;
+    line-height:1.1;
+}
+
+.hero-text span{
+    color:#ff9800;
+}
+
+.hero-text p{
+    margin-top:20px;
+    font-size:18px;
+    color:#666;
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    max-width:450px;
+    width:100%;
+}
+
+.features{
+    padding:80px 8%;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    color:#7a3500;
+    margin-bottom:50px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff8e8;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#7a3500;
+    margin-bottom:15px;
+}
+
+.products{
+    padding:80px 8%;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.product{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:20px;
+}
+
+.product-info h4{
+    color:#7a3500;
+}
+
+.price{
+    color:#ff9800;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.buy-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#ff9800;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.about{
+    padding:80px 8%;
+    background:#fff8e8;
+    text-align:center;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.contact{
+    padding:80px 8%;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:auto;
+}
+
+input,textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+footer{
+    background:#7a3500;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+    .hero-text h1{
+        font-size:42px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🥚 Superior Protein Eggs</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#features">Benefits</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Superior <span>Protein Eggs</span></h1>
+
+        <p>
+            Protein You Can Trust. Fresh farm eggs packed with
+            premium nutrition, superior quality, and unbeatable taste.
+        </p>
+
+        <a href="#products" class="btn">Order Now</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="egg-mascot.jpg" alt="Superior Protein Eggs">
+    </div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h2 class="section-title">Why Choose Us?</h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>💪 High Protein</h3>
+            <p>Natural protein source for strength and energy.</p>
+        </div>
+
+        <div class="card">
+            <h3>🥚 Farm Fresh</h3>
+            <p>Collected daily with strict quality standards.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Premium Nutrition</h3>
+            <p>Rich in vitamins, minerals, and essential nutrients.</p>
+        </div>
+
+        <div class="card">
+            <h3>✅ Trusted Quality</h3>
+            <p>Safe, hygienic, and consistently superior.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="products" id="products">
+
+<h2 class="section-title">Our Products</h2>
+
+<div class="product-grid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1569288063643-5d5f1b4efc2e?w=800" alt="">
+<div class="product-info">
+<h4>Superior Protein Eggs (6 Pack)</h4>
+<div class="price">₹60</div>
+<button class="buy-btn">Add to Cart</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=800" alt="">
+<div class="product-info">
+<h4>Superior Protein Eggs (12 Pack)</h4>
+<div class="price">₹120</div>
+<button class="buy-btn">Add to Cart</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?w=800" alt="">
+<div class="product-info">
+<h4>Family Pack (30 Eggs)</h4>
+<div class="price">₹300</div>
+<button class="buy-btn">Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<p>
+At Superior Protein Eggs, our mission is simple:
+deliver fresh, nutritious, high-protein eggs to every household.
+We believe quality nutrition should be affordable, accessible,
+and trusted by families across India.
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-box">
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea rows="5" placeholder="Message"></textarea>
+
+<button class="buy-btn">
+Send Message
+</button>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Superior Protein Eggs | Protein You Can Trust
+</footer>
+
+</body>
+</html>
